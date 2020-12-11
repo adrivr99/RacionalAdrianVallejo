@@ -50,5 +50,9 @@ public class Racional {
         }
     }
     
+    public void imprimir(){
+        System.out.println("Numerador: " + numerador);
+        System.out.println("Denominador: " + denominador);
+    }
     
 }
