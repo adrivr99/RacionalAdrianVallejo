@@ -55,4 +55,9 @@ public class Racional {
         System.out.println("Denominador: " + denominador);
     }
     
+    @Override
+    public String toString() {
+        return numerador + "/" + denominador;
+    }
+    
 }
