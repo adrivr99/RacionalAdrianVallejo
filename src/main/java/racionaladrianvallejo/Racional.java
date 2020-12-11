@@ -5,6 +5,8 @@
  */
 package racionaladrianvallejo;
 
+import java.util.Random;
+
 /**
  *
  * @author adriv
@@ -96,5 +98,11 @@ public class Racional {
         } else {
             System.out.println("No, no son iguales los racionales");
         }
+    }
+    
+    public void aleatorio(){
+        Random aleatorio = new Random();
+        this.numerador = aleatorio.nextInt(20);// Limite 20 para que no salgan numeros muy grandes
+        this.denominador = aleatorio.nextInt(20)+1;
     }
 }
