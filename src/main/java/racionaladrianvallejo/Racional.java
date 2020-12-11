@@ -49,17 +49,17 @@ public class Racional {
             this.denominador = denominador;
         }
     }
-    
-    public void imprimir(){
+
+    public void imprimir() {
         System.out.println("Numerador: " + numerador);
         System.out.println("Denominador: " + denominador);
     }
-    
+
     @Override
     public String toString() {
         return numerador + "/" + denominador;
     }
-    
+
     public void suma(Racional x) {
         if (denominador == x.getDenominador()) {
             this.numerador = (numerador + x.getNumerador());
@@ -69,7 +69,7 @@ public class Racional {
             this.denominador = (denominador * x.getDenominador());
         }
     }
-    
+
     public void resta(Racional x) {
         if (denominador == x.getDenominador()) {
             this.numerador = (numerador - x.getNumerador());
@@ -78,5 +78,10 @@ public class Racional {
             this.numerador = ((numerador * x.getDenominador()) - (x.getNumerador() * denominador));
             this.denominador = (denominador * x.getDenominador());
         }
+    }
+
+    public void producto(Racional x) {
+        this.numerador = numerador * x.getNumerador();
+        this.denominador = denominador * x.getDenominador();
     }
 }
