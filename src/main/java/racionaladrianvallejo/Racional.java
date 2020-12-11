@@ -84,4 +84,9 @@ public class Racional {
         this.numerador = numerador * x.getNumerador();
         this.denominador = denominador * x.getDenominador();
     }
+    
+    public void division(Racional x, Racional y) {
+        this.numerador = x.getNumerador() * y.getDenominador();
+        this.denominador = x.getDenominador() * y.getNumerador();
+    }
 }
