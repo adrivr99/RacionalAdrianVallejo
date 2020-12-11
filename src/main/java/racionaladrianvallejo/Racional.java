@@ -60,4 +60,15 @@ public class Racional {
         return numerador + "/" + denominador;
     }
     
+    public void suma(Racional x) {
+        if (denominador == x.getDenominador()) {
+            this.numerador = (numerador + x.getNumerador());
+            this.denominador = denominador;
+        } else {
+            this.numerador = ((numerador * x.getDenominador()) + (x.getNumerador() * denominador));
+            this.denominador = (denominador * x.getDenominador());
+        }
+
+        System.out.println(numerador + "/" + denominador);
+    }
 }
