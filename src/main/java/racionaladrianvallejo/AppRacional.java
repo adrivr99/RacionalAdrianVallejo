@@ -31,5 +31,7 @@ public class AppRacional {
         formateador.format(r.getDenominador());
         formateador.format(r.getNumerador());
         r.imprimir();
+        
+        z.igualdad(z, k);
     }
 }
