@@ -89,4 +89,12 @@ public class Racional {
         this.numerador = x.getNumerador() * y.getDenominador();
         this.denominador = x.getDenominador() * y.getNumerador();
     }
+    
+    public void igualdad(Racional x, Racional y) {
+        if ((x.getNumerador() + y.getDenominador()) == (x.getDenominador() + y.getNumerador())) {
+            System.out.println("Si, son iguales los racionales");
+        } else {
+            System.out.println("No, no son iguales los racionales");
+        }
+    }
 }
