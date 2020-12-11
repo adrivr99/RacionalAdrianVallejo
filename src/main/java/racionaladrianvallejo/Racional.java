@@ -10,5 +10,13 @@ package racionaladrianvallejo;
  * @author adriv
  */
 public class Racional {
+    int numerador;
+    int denominador;
+
+    public Racional() {
+        this.numerador = 1;
+        this.denominador = 1;
+    }
+    
     
 }
