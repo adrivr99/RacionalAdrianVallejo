@@ -20,18 +20,29 @@ public class AppRacional {
         r.aleatorio();
 
         DecimalFormat formateador = new DecimalFormat("####.##");
+        System.out.println("Racional Z");
         formateador.format(z.getDenominador());
         formateador.format(z.getNumerador());
         z.imprimir();
+        System.out.println("");
 
+        System.out.println("Racional K");
         formateador.format(k.getDenominador());
         formateador.format(k.getNumerador());
         k.imprimir();
+        System.out.println("");
 
+        System.out.println("Racional R");
         formateador.format(r.getDenominador());
         formateador.format(r.getNumerador());
         r.imprimir();
+        System.out.println("");
         
         z.igualdad(z, k);
+        System.out.println("");
+        
+        System.out.println("Suma");
+        z.suma(k);
+        System.out.println(z);
     }
 }
