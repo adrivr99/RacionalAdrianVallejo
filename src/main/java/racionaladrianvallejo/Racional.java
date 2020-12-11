@@ -10,6 +10,7 @@ package racionaladrianvallejo;
  * @author adriv
  */
 public class Racional {
+
     int numerador;
     int denominador;
 
@@ -17,7 +18,7 @@ public class Racional {
         this.numerador = 1;
         this.denominador = 1;
     }
-    
+
     public Racional(int numerador, int denominador) {
         this.numerador = numerador;
 
@@ -27,5 +28,13 @@ public class Racional {
             this.denominador = denominador;
         }
 
+    }
+
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
     }
 }
