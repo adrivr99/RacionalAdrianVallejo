@@ -68,7 +68,15 @@ public class Racional {
             this.numerador = ((numerador * x.getDenominador()) + (x.getNumerador() * denominador));
             this.denominador = (denominador * x.getDenominador());
         }
-
-        System.out.println(numerador + "/" + denominador);
+    }
+    
+    public void resta(Racional x) {
+        if (denominador == x.getDenominador()) {
+            this.numerador = (numerador - x.getNumerador());
+            this.denominador = denominador;
+        } else {
+            this.numerador = ((numerador * x.getDenominador()) - (x.getNumerador() * denominador));
+            this.denominador = (denominador * x.getDenominador());
+        }
     }
 }
